@@ -1,0 +1,122 @@
+/* Media Screen 768px */
+@media screen and (min-width:768px) {
+
+    /* font-size Section 768px */
+
+    .title {
+        font-size: var(--fs-title-tablet , 48px);
+        line-height: var(--line-height-title-tablet , 1.5);
+    }
+
+    .title-h1 {
+        font-size: var(--fs-title-h1-tablet , 20px);
+        line-height: var(--line-height-title-tablet , 1.5);
+    }
+
+    .subtitle {
+        font-size: var(--fs-subtitle-tablet , 36px) ;
+        line-height: var(--line-height-title-tablet , 1.5);
+    }
+
+    .paragraph {
+        font-size: var(--fs-paragraph-tablet , 20px);
+        line-height: var(--line-height-paragraph-tablet , 1.5);
+    }
+
+    .utilitiesList__link {
+        font-size: var(--fs-utilities-links-tablet , 24px);
+    }
+
+    .informationContentBox__number {    
+        font-size: var(--fs-information-number-tablet , 24px);
+    }
+
+    .informationContentBox__text {
+        font-size: var(--fs-information-text-tablet , 20px);
+    }
+
+    .teamBox__title {
+        font-size: var(--fs-team-names-tablet , 24px);
+    }
+
+    .teamBox__work {
+        font-size: var(--fs-team-work-tablet , 16px);
+    }
+
+    .list__link {
+        font-size: var(--fs-menu-link-tablet , 40px);
+    }
+
+    .menuOpen__title {
+        font-size: var(--fs-menu-title-tablet , 68px);
+    }
+
+    .menuOpenFooter__copyright {
+        font-size: var(--fs-menu-copyright-tablet , 26px);    
+    }
+
+}
+
+/* Media Screen 1024px */
+@media screen and (min-width:1024px) {
+
+}
+
+/* Media Screen 1440px */
+@media screen and (min-width:1440px) {
+
+    /* font-size Section 1440px */
+
+    .title {
+        font-size: var(--fs-title-desktop , 50px);
+        line-height: var(--line-height-title-desktop , 1.5);
+    }
+
+    .title-h1 {
+        font-size: var(--fs-title-h1-desktop , 50px);
+        line-height: var(--line-height-title-desktop , 1.5);
+    }
+
+    .subtitle {
+        font-size: var(--fs-subtitle-desktop , 50px) ;
+        line-height: var(--line-height-title-desktop , 1.5);
+    }
+
+    .paragraph {
+        font-size: var(--fs-paragraph-desktop , 25px);
+        line-height: var(--line-height-paragraph-desktop , 1.5);
+    }
+
+    .utilitiesList__link {
+        font-size: var(--fs-utilities-links-desktop , 28px);
+    }
+
+    .informationContentBox__number {    
+        font-size: var(--fs-information-number-desktop , 30px);
+    }
+
+    .informationContentBox__text {
+        font-size: var(--fs-information-text-desktop , 25px);
+    }
+
+    .teamBox__title {
+        font-size: var(--fs-team-names-desktop , 24px);
+    }
+
+    .teamBox__work {
+        font-size: var(--fs-team-work-desktop , 16px);
+    }
+
+    .list__link {
+        font-size: var(--fs-menu-link-desktop , 50px);
+    }
+
+    .menuOpen__title {
+        font-size: var(--fs-menu-title-desktop , 88px);
+    }
+
+    .menuOpenFooter__copyright {
+        font-size: var(--fs-menu-copyright-desktop , 26px);    
+    }
+
+}

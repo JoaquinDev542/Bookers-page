@@ -1,0 +1,409 @@
+/* Typographies Sections */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;600;700&display=swap');
+
+/* CSS Import Section */
+@import "variables.css";
+
+/* HTML Section */
+
+* , ::before , ::after {
+    box-sizing: border-box;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+/* Body Section */
+.body {
+    font-family: var(--ff-paragraphs) , 'Roboto Serif', serif;
+    background-color: var(--clr-bg , #F5F5F5) ;
+}
+
+/* Img Section */
+img {
+    display:block;
+    max-width: var(--width-one-hundred-percentage , 100%) ;
+}
+
+/* Span Section */
+span {
+    display: block;
+}
+
+/* Font-size Section Important */
+.title-h1 {
+    margin-top: 10px;
+    font-family: var(--ff-titles , 'Brygada 1918', serif);
+    font-size: var(--fs-title-h1-mobile , 16px);
+    line-height: var(--line-height-title-mobile , 1.5);
+}
+
+.title {
+    margin: var(--title-margin-mobile , 30px 0) ;
+    padding: var(--padding-mobile , 0 25px);
+    font-family: var(--ff-titles , 'Brygada 1918', serif);
+    font-size: var(--fs-title-mobile  , 32px);
+    line-height: var(--line-height-title-mobile , 1.5);
+}
+
+.subtitle {
+    font-size: var(--fs-subtitle-mobile , 24px) ;
+    line-height: var(--line-height-title-mobile , 1.5);
+}
+
+.paragraph {
+    margin: var(--title-margin-mobile , 30px 0) ;
+    font-size: var(--fs-paragraph-mobile , 16px);
+    line-height: var(--line-height-paragraph-mobile , 1.5);
+}
+
+/* Hero Section 375px */
+.hero {
+    position: relative;
+    display: grid;
+    grid-template-rows: var(--width-fifty-percentage , 50%) var(--width-fifty-percentage , 50%) ;
+    grid-template-areas: 
+    "heroImg"
+    "heroContent";
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.heroImg {
+    grid-area: heroImg;
+    background-image: url(/proyect1/assets/images/bg-images/bg-hero.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu__img {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    width: 30px;
+}
+
+/* Menu Responsive Section */
+.menuOpen {
+    display: none;
+}
+
+.menuOpen.active {
+    display: block;
+    background-color: var(--clr-bg-menu , #28282F);
+    /* z-index: 200;
+    width: 100%;
+    height: 100vh; */
+}
+
+/* Menu Open */
+
+.list__link {
+    font-size: var(--fs-menu-link-mobile , 30px);
+}
+
+.menuOpen__title {
+    font-size: var(--fs-menu-title-mobile , 48px);
+}
+
+.menuOpenFooter__copyright {
+    font-size: var(--fs-menu-copyright-mobile , 16px);    
+}
+
+.heroContent {
+    grid-area: heroContent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.socialMedia {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.socialMedia__links {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: var(--clr-orange , #FFC271);
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.logoContainer__text {
+    font-family: var(--ff-titles , 'Brygada 1918', serif);
+    font-size: var(--fs-logo-mobile , 32px);
+}
+
+.heroContent__links {
+    color: var(--clr-texts , #000);
+}
+
+/* Gallery Section */
+.gallery {
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.galleryContainer {
+    position: relative;
+}
+
+.galleryContainer::before {
+    position: absolute;
+    content: "";
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background-color: var(--clr-bg-gallery , #28282F);
+}
+
+.galleryBox {
+    position: relative;
+    padding: var(--padding-mobile , 0 25px);
+    z-index: 10;
+}
+
+.galleryBox--hidden {
+    display: none;
+}
+
+.galleryBox__link {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: var(--text-decoration-none , none);
+    color: var(--clr-white , #FFF);
+    background-color: var(--clr-btns , #CB95E7);
+}
+
+.galleryContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.galleryContent__paragraph {
+    margin-top: 50px;
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.galleryContent__arrowLink {
+    align-self: center;
+}
+
+.galleryContent__arrowImg {
+    width: 50px;
+    margin-top: 25px;
+}
+
+/* Information Section */
+.information {
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.informationContentBoxContainer {
+    display: flex;
+    margin: 50px 0px 50px 50px;
+}
+
+.informationContentBox__container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.informationContentBox {
+    width: 100%;
+}
+
+.informationContentBox__eth {
+    width: 13px;
+}
+
+.informationContentBox__text {
+    margin-top: 5px;
+    color: var(--clr-gray , #5B5B5B);
+}
+
+.informationContent__link {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: var(--text-decoration-none , none);
+    color: var(--clr-white , #FFF);
+    background-color: var(--clr-btns , #CB95E7);
+}
+
+/* Gods Section */
+.gods {
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.godsContent__subtitle {
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.godsContent__paragraph {
+    padding: var(--padding-mobile , 0 25px);
+}
+
+.godsContent__link {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: var(--text-decoration-none , none);
+    color: var(--clr-white , #FFF);
+    background-color: var(--clr-btns , #CB95E7);
+}
+
+/* RoadMap Section */
+.roadmap {
+    background-color: var(--clr-pink , #CB95E7) ;
+}
+
+.roadmapContainer {
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.roadmapContainer--first {
+    position: relative;
+}
+
+.roadmapContainer--first::after {
+    position: absolute;
+    content:"";
+    bottom: 50px;
+    right: 0;
+    width: 75%;
+    height: 5px;
+    background-color: var(--clr-white , #FFF);
+}
+
+.roadmapContainer__title {
+    padding-top: 30px;
+}
+
+.roadmapContainer__title--hidden {
+    display: none;
+}
+
+.roadmapImg__img {
+    margin: 100px auto;
+}
+
+.roadmapImg__img--second {
+    padding-top: 50px;
+}
+
+.roadmapContent {
+    padding: var(--padding-mobile , 0 25px);
+}
+
+/* Utilities Section */
+.utilities {
+    display: grid;
+    grid-template-rows: var(--width-fifty-percentage , 50%) var(--width-fifty-percentage , 50%);
+    grid-template-areas: 
+    "utilitiesContent"
+    "utilitiesImg";
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.utilitiesContent {
+    grid-area: utilitiesContent;
+}
+
+.utilitiesList {
+    padding-left: 25px;
+}
+
+.utilitiesList__item {
+    margin: 30px 0;
+    list-style-type: none;
+}
+
+.utilitiesList__link {
+    font-size: var(--fs-utilities-links-mobile , 20px);
+    color: var(--clr-texts , #000);
+}
+
+.utilitiesImg {
+    grid-area: utilitiesImg;
+    padding: var(--padding-mobile , 0 25px);
+    background-color: var(--clr-yellow , #FFE780);
+}
+
+.utilitiesImgList__item {
+    margin: 10px 0;
+}
+
+/* Team Section */
+.teamBoxFirst {
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.teamBoxSecond {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "teamBoxContainer"
+    "footer";
+    min-height: var(--height-max-vh , 100vh);
+}
+
+.teamBoxContainer {
+    grid-area: teamBoxContainer;
+}
+
+.teamBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 75px;
+}
+
+.teamBox--third {
+    margin-top: 50px;
+}
+
+.teamBox__img {
+    width: 50%;
+    margin: 0 auto;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.teamBox__title {
+    text-align: center;
+    margin: 20px 0 0 0 ;
+    font-size: var(--fs-team-names-mobile , 24px);
+    text-decoration: var(--text-decoration , underline);
+}
+
+.teamBox__work {
+    text-align: center;
+    font-size: var(--fs-team-work-mobile , 16px);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    grid-area: footer;
+    background-color: var(--clr-pink , #FFB8CE);
+}
+
+
