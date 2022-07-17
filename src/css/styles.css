@@ -101,7 +101,6 @@ span {
     right: 0;
     background-color: var(--clr-orange , #FFC271);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
-
 }
 
 .menuOpen.active {
