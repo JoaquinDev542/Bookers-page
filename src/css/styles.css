@@ -107,19 +107,18 @@ span {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: var(--padding-mobile ,  0 25px);
     background-color: var(--clr-bg-menu , #28282F);
     z-index: 200;
-    padding: var(--padding-mobile ,  0 25px);
 }
 
 #menuClose.active {
     display: none;
 } 
- 
 
 /* Menu Open Section */
 .menuOpen__closeLink {
@@ -133,9 +132,9 @@ span {
 
 .menuOpen__title {
     display: block;
+    margin-top: 130px;
     font-size: var(--fs-menu-title-mobile , 48px);
     color: var(--clr-white , #FFF);
-    margin-top: 130px;
 }
 
 .listContainer {
@@ -276,15 +275,15 @@ span {
 }
 
 .informationContentBoxs {
-    /* padding: 30px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px;
 }
 
 .informationContentBoxContainer {
     display: flex;
-    gap: 0px;
-    /* align-items: center;
-    justify-content: center; */
-
+    gap: 30px;
 }
 
 .informationContentBox__container {
