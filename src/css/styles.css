@@ -275,14 +275,21 @@ span {
     min-height: var(--height-max-vh , 100vh);
 }
 
+.informationContentBoxs {
+    /* padding: 30px; */
+}
+
 .informationContentBoxContainer {
     display: flex;
-    margin: 50px 0px 50px 50px;
+    gap: 0px;
+    /* align-items: center;
+    justify-content: center; */
+
 }
 
 .informationContentBox__container {
     display: flex;
-    align-items: center;
+    align-items: center; 
     gap: 5px;
 }
 
