@@ -108,12 +108,16 @@ span {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: var(--clr-bg-menu , #28282F);
     z-index: 200;
     padding: var(--padding-mobile ,  0 25px);
+}
+
+#menuClose.active {
+    display: none;
 }
 
 
