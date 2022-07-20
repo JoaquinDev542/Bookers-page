@@ -74,7 +74,7 @@ span {
 
 .heroImg {
     grid-area: heroImg;
-    background-image: url(/assets/images/bg-images/bg-collection-booker.jpeg);
+    background-image: url(/assets/images/bg-images/bg-gallery1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
