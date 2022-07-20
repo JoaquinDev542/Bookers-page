@@ -20,6 +20,7 @@
 .body {
     font-family: var(--ff-paragraphs) , 'Roboto Serif', serif;
     background-color: var(--clr-bg , #F5F5F5) ;
+    font-size: 16px;
 }
 
 /* Img Section */
@@ -92,15 +93,14 @@ span {
     display: none;
 }
 
-.menuOpen::after {
+.menuOpenContainer {
     position: absolute;
-    content: "";
-    width: 35%;
-    height:131.37px;
     top: 0;
     right: 0;
-    background-color: var(--clr-orange , #FFC271);
+    width: 125px;
+    height: 125px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+    background-color: var(--clr-orange , #FFC271);
 }
 
 .menuOpen.active {
