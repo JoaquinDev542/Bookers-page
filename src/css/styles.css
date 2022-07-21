@@ -523,8 +523,8 @@ span {
 
     .socialMedia--hero {
         grid-area: socialMedia--hero;
-        margin-top: 10px;
         justify-self: flex-end;
+        margin-top: 10px;
     }
 
     .logoContainer {
@@ -617,10 +617,6 @@ span {
     }
 
     /* Team Section Tablet */
-
-    /* .teamBoxs {
-        display: flex;
-    } */
 
     .teamBox__title {
         font-size: var(--fs-team-names-tablet , 24px);
