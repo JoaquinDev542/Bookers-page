@@ -316,60 +316,66 @@
 
             <div class="utilitiesContent">
 
-                <h2 class="utilities__title title">Utilidades</h2>
+                <h2 class="utilities__title title" >Utilidades</h2>
 
 
                 <ul class="utilitiesList">
 
                     <li class="utilitiesList__item">
-                        <a href="#utilities" class="utilitiesList__link" id="artLink">Arte</a>
+                        <a class="utilitiesList__link" id="arte_link">Arte</a>
                     </li>
 
                     <li class="utilitiesList__item">
-                        <a href="#utilities" class="utilitiesList__link" id="communityLink">Comunidad</a>
+                        <a href="#" class="utilitiesList__link" id="comunidad_link">Comunidad</a>
                     </li>
 
                     <li class="utilitiesList__item">
-                        <a href="#utilities" class="utilitiesList__link" id="leaderSummariesLink">Leader Summaries</a>
+                        <a href="#" class="utilitiesList__link">Leader Summaries</a>
                     </li>
 
                     <li class="utilitiesList__item">
-                        <a href="#utilities" class="utilitiesList__link" id="flashLibrosLink">Flash Libros</a>
+                        <a href="#" class="utilitiesList__link">Flash Libros</a>
                     </li>
 
                     <li class="utilitiesList__item">
-                        <a href="#utilities" class="utilitiesList__link" id="metaversesLink">Metaversos</a>
+                        <a href="#" class="utilitiesList__link">Metaversos</a>
                     </li>
 
                 </ul>
 
             </div>
 
-            <article class="utilitiesImg">
+            <div id="utilities__Information">
 
-                <h3 class="utilitiesImg__subtitle subtitle" id="utilitiesSubtitle">Arte</h3>
+                <article class="utilitiesImg">
 
-                <p class="utilitiesImg__paragraph paragraph">Las propiedades de los NFT son las siguientes:</p>
+                    <h3 class="utilitiesImg__subtitle subtitle">Arte</h3>
+    
+                    <p class="utilitiesImg__paragraph paragraph">Las propiedades de los NFT son las siguientes:</p>
+    
+                    <ul class="utilitiesImgList">
+    
+                        <li id="utilitiesImgList__item1">10 tipos de cabeza</li>
+    
+                        <li class="utilitiesImgList__item">94 tipos de cara</li>
+    
+                        <li class="utilitiesImgList__item">117 tipos de cuerpo</li>
+    
+                        <li class="utilitiesImgList__item">9 de especialidad</li>
+    
+                        <li class="utilitiesImgList__item">20 tipos de fondo</li>
+    
+                        <li class="utilitiesImgList__item">107 peinados</li>
+    
+                        <li class="utilitiesImgList__item">5 tipos de pendientes</li>
+    
+                        <h1 id="salida"></h1>
+    
+                    </ul>
+    
+                </article>
 
-                <ul class="utilitiesImgList">
-
-                    <li class="utilitiesImgList__item">10 tipos de cabeza</li>
-
-                    <li class="utilitiesImgList__item">94 tipos de cara</li>
-
-                    <li class="utilitiesImgList__item">117 tipos de cuerpo</li>
-
-                    <li class="utilitiesImgList__item">9 de especialidad</li>
-
-                    <li class="utilitiesImgList__item">20 tipos de fondo</li>
-
-                    <li class="utilitiesImgList__item">107 peinados</li>
-
-                    <li class="utilitiesImgList__item">5 tipos de pendientes</li>
-
-                </ul>
-
-            </article>
+            </div>
 
             </section>
 
@@ -448,5 +454,22 @@
 
     <!-- Scripts -->
     <script src="./src/js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        })
+
+        ScrollReveal().reveal('.gallery__title');
+        ScrollReveal().reveal('.galleryContent');
+        ScrollReveal().reveal('.galleryBox');
+        // ScrollReveal().reveal('.workProject--third', {delay: 1000});
+        // ScrollReveal().reveal('.workProject--fourth', {delay: 1500});
+        // ScrollReveal().reveal('.workProject--fifth', {delay: 2000});
+        // ScrollReveal().reveal('.workProject--sixth', {delay: 2500});
+    </script>
 </body>
 </html>
